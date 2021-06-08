@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f8efe6;
+}
+
+section {
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginform {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 70%;
+  padding: 0 2rem;
+}
+
+form .textField {
+  position: relative;
+  width: 100%;
+  border-bottom: 3px solid #7c481d;
+  margin: 20px 0;
+}
+
+.textField input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+}
+
+.textField label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  pointer-events: none;
+  transform: translateY(-10%);
+  transition: 0.5s;
+}
+
+.textField input:focus ~ label,
+.textField input:valid ~ label {
+  top: -10px;
+  color: #7c481d;
+}
+
+.loginform h1 {
+  text-align: center;
+  color: #7c481d;
+  font-size: 40px;
+}
+.loginform h4 {
+  text-align: center;
+  color: red;
+}
+.loginform h5 {
+  color: #7c481d;
+}
+
+.submitBtn {
+  width: 8rem;
+  padding: 8px 12px;
+  display: block;
+  background: #c98860;
+  border: none;
+  color: #f8efe6;
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.submitBtn:hover {
+  background-color: #a36029;
+  transition: 0.2s ease;
+}
+
+.contact textarea {
+  width: 10rem;
+  resize: none;
+}
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+}
